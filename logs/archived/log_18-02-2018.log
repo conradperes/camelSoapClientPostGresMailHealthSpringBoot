@@ -1,0 +1,1062 @@
+18-02-2018 20:53:49.551 [main] INFO  c.l.CamelSpringBoilerPlateApplication.logStarting - Starting CamelSpringBoilerPlateApplication on 6c4008c0f7fa with PID 6256 (/Dilip/Study/ApacheCamel/TeachApacheCamel-Spring-Boot/codebase/camel-spring-boot-boiler-plate/target/classes started by z001qgd in /Dilip/Study/ApacheCamel/TeachApacheCamel-Spring-Boot/codebase/camel-spring-boot-boiler-plate)
+18-02-2018 20:53:49.566 [main] INFO  c.l.CamelSpringBoilerPlateApplication.logStartupProfileInfo - The following profiles are active: dev
+18-02-2018 20:53:49.639 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f45df59: startup date [Sun Feb 18 20:53:49 CST 2018]; root of context hierarchy
+18-02-2018 20:53:49.838 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.6.Final
+18-02-2018 20:53:51.190 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$1aac78e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-02-2018 20:53:51.203 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$df81016f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-02-2018 20:53:51.627 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8080 (http)
+18-02-2018 20:53:51.639 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+18-02-2018 20:53:51.640 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.23
+18-02-2018 20:53:51.723 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+18-02-2018 20:53:51.724 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 2085 ms
+18-02-2018 20:53:51.909 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+18-02-2018 20:53:51.914 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'metricsFilter' to: [/*]
+18-02-2018 20:53:51.914 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+18-02-2018 20:53:51.914 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18-02-2018 20:53:51.914 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18-02-2018 20:53:51.915 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+18-02-2018 20:53:51.915 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+18-02-2018 20:53:51.915 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'applicationContextIdFilter' to: [/*]
+18-02-2018 20:53:52.457 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f45df59: startup date [Sun Feb 18 20:53:49 CST 2018]; root of context hierarchy
+18-02-2018 20:53:52.522 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18-02-2018 20:53:52.523 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18-02-2018 20:53:52.550 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-02-2018 20:53:52.550 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-02-2018 20:53:52.581 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-02-2018 20:53:52.834 [main] WARN  o.a.c.i.DefaultCamelBeanPostProcessor.postProcessBeforeInitialization - No CamelContext defined yet so cannot inject into bean: routesHealthCheckRepository
+18-02-2018 20:53:52.977 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 192, classpath: 10)
+18-02-2018 20:53:53.555 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+18-02-2018 20:53:53.556 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+18-02-2018 20:53:53.556 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:53:53.556 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:53:53.557 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+18-02-2018 20:53:53.558 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+18-02-2018 20:53:53.559 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+18-02-2018 20:53:53.559 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:53:53.560 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/route-controller || /camel/route-controller.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:53:53.561 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+18-02-2018 20:53:53.563 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:53:53.568 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/start],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.start(java.lang.String)
+18-02-2018 20:53:53.569 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/stop],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.stop(java.lang.String,java.lang.Long,java.lang.Boolean)
+18-02-2018 20:53:53.569 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/suspend],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.suspend(java.lang.String,java.lang.Long)
+18-02-2018 20:53:53.569 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/resume],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.resume(java.lang.String)
+18-02-2018 20:53:53.570 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/reset],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.reset(java.lang.String)
+18-02-2018 20:53:53.570 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.info(java.lang.String)
+18-02-2018 20:53:53.571 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/detail],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.detail(java.lang.String)
+18-02-2018 20:53:53.571 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes || /camel/routes.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:53:53.572 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:53:53.572 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:53:53.573 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:53:53.575 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/health/check/{id}/invoke],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelHealthCheckMvcEndpoint.invoke(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+18-02-2018 20:53:53.575 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/health/check/{id}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelHealthCheckMvcEndpoint.query(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+18-02-2018 20:53:53.575 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/health/check || /camel/health/check.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:53:53.576 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+18-02-2018 20:53:53.576 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:53:53.577 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:53:53.577 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:53:53.773 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+18-02-2018 20:53:53.778 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+18-02-2018 20:53:53.783 [main] INFO  o.s.c.s.DefaultLifecycleProcessor.start - Starting beans in phase 0
+18-02-2018 20:53:53.786 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+18-02-2018 20:53:53.798 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'healthChecksEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthChecksEndpoint]
+18-02-2018 20:53:53.806 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'routeControllerEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=routeControllerEndpoint]
+18-02-2018 20:53:53.810 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'camelEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=camelEndpoint]
+18-02-2018 20:53:53.812 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+18-02-2018 20:53:53.815 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+18-02-2018 20:53:53.818 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+18-02-2018 20:53:53.821 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+18-02-2018 20:53:53.823 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+18-02-2018 20:53:53.826 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+18-02-2018 20:53:53.830 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+18-02-2018 20:53:53.833 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+18-02-2018 20:53:53.835 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+18-02-2018 20:53:53.838 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+18-02-2018 20:53:53.839 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+18-02-2018 20:53:53.893 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+18-02-2018 20:53:53.894 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+18-02-2018 20:53:53.908 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: camel-1) is starting
+18-02-2018 20:53:53.909 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+18-02-2018 20:53:54.083 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+18-02-2018 20:53:54.138 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: healthRoute started and consuming from: timer://health?period=10s
+18-02-2018 20:53:54.139 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route1 started and consuming from: timer://health?period=10s
+18-02-2018 20:53:54.140 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Total 2 routes, of which 2 are started
+18-02-2018 20:53:54.141 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: camel-1) started in 0.232 seconds
+18-02-2018 20:53:54.144 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+18-02-2018 20:53:54.153 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+18-02-2018 20:53:54.171 [main] INFO  o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+18-02-2018 20:53:54.187 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8080 (http)
+18-02-2018 20:53:54.192 [main] INFO  c.l.CamelSpringBoilerPlateApplication.logStarted - Started CamelSpringBoilerPlateApplication in 5.248 seconds (JVM running for 5.928)
+18-02-2018 20:53:55.284 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+18-02-2018 20:53:55.285 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+18-02-2018 20:53:55.301 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+18-02-2018 20:53:56.414 [http-nio-8080-exec-1] WARN  o.s.b.a.health.MailHealthIndicator.health - Health check failed
+javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials l64sm19638059itb.25 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:932)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:843)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:748)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.testConnection(JavaMailSenderImpl.java:382)
+	at org.springframework.boot.actuate.health.MailHealthIndicator.doHealthCheck(MailHealthIndicator.java:40)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:43)
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:68)
+	at org.springframework.boot.actuate.endpoint.HealthEndpoint.invoke(HealthEndpoint.java:85)
+	at org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.getCurrentHealth(HealthMvcEndpoint.java:177)
+	at org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.getHealth(HealthMvcEndpoint.java:166)
+	at org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(HealthMvcEndpoint.java:143)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+18-02-2018 20:53:56.781 [Camel (camel-1) thread #1 - timer://health] INFO  c.l.processor.HealthCheckProcessor.process - Health String of the APP is{"status":"DOWN","camel":{"status":"UP","name":"camel-1","version":"2.20.1","contextStatus":"Started"},"camel-health-checks":{"status":"UP","route:healthRoute":"UP","route:route1":"UP"},"mail":{"status":"DOWN","location":"smtp.gmail.com:587","error":"javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials l64sm19638059itb.25 - gsmtp\n"},"diskSpace":{"status":"UP","total":499071844352,"free":187201695744,"threshold":10485760},"db":{"status":"UP","database":"PostgreSQL","hello":1}}
+18-02-2018 20:53:56.802 [Camel (camel-1) thread #1 - timer://health] INFO  c.l.processor.HealthCheckProcessor.process - Exception Message isstatus component in the route is Down
+mail component in the route is Down
+
+18-02-2018 20:53:56.804 [Camel (camel-1) thread #1 - timer://health] INFO  com.learncamel.alert.MailProcessor.process - Error Message in MailProcessor : status component in the route is Down
+mail component in the route is Down
+
+18-02-2018 20:53:57.409 [Camel (camel-1) thread #1 - timer://health] ERROR o.a.c.processor.DefaultErrorHandler.log - Failed delivery for (MessageId: ID-6c4008c0f7fa-1519008832671-0-2 on ExchangeId: ID-6c4008c0f7fa-1519008832671-0-1). Exhausted after delivery attempt: 1 caught: org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials h2sm4764131ioa.77 - gsmtp
+
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[healthRoute       ] [healthRoute       ] [timer://health?period=10s                                                     ] [      2260]
+[healthRoute       ] [choice1           ] [when[{header{header(env)} != mock}]choice[]                                   ] [      1631]
+[healthRoute       ] [pollEnrich1       ] [pollEnrich[constant{http://localhost:8080/health}]                            ] [      1620]
+[healthRoute       ] [process1          ] [Processor@0xb835727                                                           ] [        22]
+[healthRoute       ] [choice3           ] [when[{header{header(error)} == true}]choice[]                                 ] [         0]
+[healthRoute       ] [choice2           ] [when[{header{header(env)} != mock}]choice[]                                   ] [         0]
+[healthRoute       ] [process2          ] [Processor@0x47af099e                                                          ] [       604]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials h2sm4764131ioa.77 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:424)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.learncamel.alert.MailProcessor.process(MailProcessor.java:40)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.ChoiceProcessor.process(ChoiceProcessor.java:117)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.ChoiceProcessor.process(ChoiceProcessor.java:117)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:197)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:79)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+	Suppressed: java.lang.Throwable: status component in the route is Down
+mail component in the route is Down
+
+		at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		at org.springframework.core.convert.support.ObjectToObjectConverter.convert(ObjectToObjectConverter.java:106)
+		at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:37)
+		at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:203)
+		at org.apache.camel.spring.boot.SpringTypeConverter.convertTo(SpringTypeConverter.java:62)
+		at org.apache.camel.impl.converter.BaseTypeConverterRegistry.doConvertTo(BaseTypeConverterRegistry.java:326)
+		at org.apache.camel.impl.converter.BaseTypeConverterRegistry.convertTo(BaseTypeConverterRegistry.java:141)
+		at org.apache.camel.util.ExchangeHelper.convertToType(ExchangeHelper.java:240)
+		at org.apache.camel.impl.DefaultExchange.getProperty(DefaultExchange.java:200)
+		at org.apache.camel.processor.RedeliveryErrorHandler.handleException(RedeliveryErrorHandler.java:862)
+		at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:445)
+		... 14 common frames omitted
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials h2sm4764131ioa.77 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:932)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:843)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:748)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 19 common frames omitted
+18-02-2018 20:53:57.411 [Camel (camel-1) thread #1 - timer://health] WARN  o.a.c.component.timer.TimerConsumer.log - Error processing exchange. Exchange[ID-6c4008c0f7fa-1519008832671-0-1]. Caused by: [org.springframework.mail.MailAuthenticationException - Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials h2sm4764131ioa.77 - gsmtp
+]
+org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials h2sm4764131ioa.77 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:424)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.learncamel.alert.MailProcessor.process(MailProcessor.java:40)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.ChoiceProcessor.process(ChoiceProcessor.java:117)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.ChoiceProcessor.process(ChoiceProcessor.java:117)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:197)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:79)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+	Suppressed: java.lang.Throwable: status component in the route is Down
+mail component in the route is Down
+
+		at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		at org.springframework.core.convert.support.ObjectToObjectConverter.convert(ObjectToObjectConverter.java:106)
+		at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:37)
+		at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:203)
+		at org.apache.camel.spring.boot.SpringTypeConverter.convertTo(SpringTypeConverter.java:62)
+		at org.apache.camel.impl.converter.BaseTypeConverterRegistry.doConvertTo(BaseTypeConverterRegistry.java:326)
+		at org.apache.camel.impl.converter.BaseTypeConverterRegistry.convertTo(BaseTypeConverterRegistry.java:141)
+		at org.apache.camel.util.ExchangeHelper.convertToType(ExchangeHelper.java:240)
+		at org.apache.camel.impl.DefaultExchange.getProperty(DefaultExchange.java:200)
+		at org.apache.camel.processor.RedeliveryErrorHandler.handleException(RedeliveryErrorHandler.java:862)
+		at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:445)
+		... 14 common frames omitted
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials h2sm4764131ioa.77 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:932)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:843)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:748)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 19 common frames omitted
+18-02-2018 20:53:57.412 [Camel (camel-1) thread #1 - timer://health] INFO  .log - Exchange[ExchangePattern: InOnly, BodyType: null, Body: [Body is null]]
+18-02-2018 20:54:05.666 [http-nio-8080-exec-2] WARN  o.s.b.a.health.MailHealthIndicator.health - Health check failed
+javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials r65sm6965154ioe.26 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:932)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:843)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:748)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.testConnection(JavaMailSenderImpl.java:382)
+	at org.springframework.boot.actuate.health.MailHealthIndicator.doHealthCheck(MailHealthIndicator.java:40)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:43)
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:68)
+	at org.springframework.boot.actuate.endpoint.HealthEndpoint.invoke(HealthEndpoint.java:85)
+	at org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.getCurrentHealth(HealthMvcEndpoint.java:177)
+	at org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.getHealth(HealthMvcEndpoint.java:166)
+	at org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(HealthMvcEndpoint.java:143)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+18-02-2018 20:54:05.671 [Camel (camel-1) thread #1 - timer://health] INFO  c.l.processor.HealthCheckProcessor.process - Health String of the APP is{"status":"DOWN","camel":{"status":"UP","name":"camel-1","version":"2.20.1","contextStatus":"Started"},"camel-health-checks":{"status":"UP","route:healthRoute":"UP","route:route1":"UP"},"mail":{"status":"DOWN","location":"smtp.gmail.com:587","error":"javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials r65sm6965154ioe.26 - gsmtp\n"},"diskSpace":{"status":"UP","total":499071844352,"free":187201306624,"threshold":10485760},"db":{"status":"UP","database":"PostgreSQL","hello":1}}
+18-02-2018 20:54:05.672 [Camel (camel-1) thread #1 - timer://health] INFO  c.l.processor.HealthCheckProcessor.process - Exception Message isstatus component in the route is Down
+mail component in the route is Down
+
+18-02-2018 20:54:05.672 [Camel (camel-1) thread #1 - timer://health] INFO  com.learncamel.alert.MailProcessor.process - Error Message in MailProcessor : status component in the route is Down
+mail component in the route is Down
+
+18-02-2018 20:54:06.190 [Camel (camel-1) thread #1 - timer://health] ERROR o.a.c.processor.DefaultErrorHandler.log - Failed delivery for (MessageId: ID-6c4008c0f7fa-1519008832671-0-5 on ExchangeId: ID-6c4008c0f7fa-1519008832671-0-4). Exhausted after delivery attempt: 1 caught: org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials u15sm6754655iou.17 - gsmtp
+
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[healthRoute       ] [healthRoute       ] [timer://health?period=10s                                                     ] [      1047]
+[healthRoute       ] [choice1           ] [when[{header{header(env)} != mock}]choice[]                                   ] [       527]
+[healthRoute       ] [pollEnrich1       ] [pollEnrich[constant{http://localhost:8080/health}]                            ] [       527]
+[healthRoute       ] [process1          ] [Processor@0xb835727                                                           ] [         1]
+[healthRoute       ] [choice3           ] [when[{header{header(error)} == true}]choice[]                                 ] [         0]
+[healthRoute       ] [choice2           ] [when[{header{header(env)} != mock}]choice[]                                   ] [         0]
+[healthRoute       ] [process2          ] [Processor@0x47af099e                                                          ] [       517]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials u15sm6754655iou.17 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:424)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.learncamel.alert.MailProcessor.process(MailProcessor.java:40)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.ChoiceProcessor.process(ChoiceProcessor.java:117)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.ChoiceProcessor.process(ChoiceProcessor.java:117)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:197)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:79)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+	Suppressed: java.lang.Throwable: status component in the route is Down
+mail component in the route is Down
+
+		at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		at org.springframework.core.convert.support.ObjectToObjectConverter.convert(ObjectToObjectConverter.java:106)
+		at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:37)
+		at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:203)
+		at org.apache.camel.spring.boot.SpringTypeConverter.convertTo(SpringTypeConverter.java:62)
+		at org.apache.camel.impl.converter.BaseTypeConverterRegistry.doConvertTo(BaseTypeConverterRegistry.java:326)
+		at org.apache.camel.impl.converter.BaseTypeConverterRegistry.convertTo(BaseTypeConverterRegistry.java:141)
+		at org.apache.camel.util.ExchangeHelper.convertToType(ExchangeHelper.java:240)
+		at org.apache.camel.impl.DefaultExchange.getProperty(DefaultExchange.java:200)
+		at org.apache.camel.processor.RedeliveryErrorHandler.handleException(RedeliveryErrorHandler.java:862)
+		at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:445)
+		... 14 common frames omitted
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials u15sm6754655iou.17 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:932)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:843)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:748)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 19 common frames omitted
+18-02-2018 20:54:06.191 [Camel (camel-1) thread #1 - timer://health] WARN  o.a.c.component.timer.TimerConsumer.log - Error processing exchange. Exchange[ID-6c4008c0f7fa-1519008832671-0-4]. Caused by: [org.springframework.mail.MailAuthenticationException - Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials u15sm6754655iou.17 - gsmtp
+]
+org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials u15sm6754655iou.17 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:424)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.learncamel.alert.MailProcessor.process(MailProcessor.java:40)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.ChoiceProcessor.process(ChoiceProcessor.java:117)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.ChoiceProcessor.process(ChoiceProcessor.java:117)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:197)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:79)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+	Suppressed: java.lang.Throwable: status component in the route is Down
+mail component in the route is Down
+
+		at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		at org.springframework.core.convert.support.ObjectToObjectConverter.convert(ObjectToObjectConverter.java:106)
+		at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:37)
+		at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:203)
+		at org.apache.camel.spring.boot.SpringTypeConverter.convertTo(SpringTypeConverter.java:62)
+		at org.apache.camel.impl.converter.BaseTypeConverterRegistry.doConvertTo(BaseTypeConverterRegistry.java:326)
+		at org.apache.camel.impl.converter.BaseTypeConverterRegistry.convertTo(BaseTypeConverterRegistry.java:141)
+		at org.apache.camel.util.ExchangeHelper.convertToType(ExchangeHelper.java:240)
+		at org.apache.camel.impl.DefaultExchange.getProperty(DefaultExchange.java:200)
+		at org.apache.camel.processor.RedeliveryErrorHandler.handleException(RedeliveryErrorHandler.java:862)
+		at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:445)
+		... 14 common frames omitted
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials u15sm6754655iou.17 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:932)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:843)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:748)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 19 common frames omitted
+18-02-2018 20:54:07.414 [Camel (camel-1) thread #1 - timer://health] INFO  .log - Exchange[ExchangePattern: InOnly, BodyType: null, Body: [Body is null]]
+18-02-2018 20:54:15.069 [Thread-4] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f45df59: startup date [Sun Feb 18 20:53:49 CST 2018]; root of context hierarchy
+18-02-2018 20:54:15.071 [Thread-4] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 2147483647
+18-02-2018 20:54:15.071 [Thread-4] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: camel-1) is shutting down
+18-02-2018 20:54:15.071 [Thread-4] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 2 routes (timeout 1 seconds)
+18-02-2018 20:54:15.075 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: timer://health?period=10s
+18-02-2018 20:54:15.076 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: healthRoute shutdown complete, was consuming from: timer://health?period=10s
+18-02-2018 20:54:15.076 [Thread-4] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 2 routes completed in 0 seconds
+18-02-2018 20:54:15.089 [Thread-4] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: camel-1) uptime 21.181 seconds
+18-02-2018 20:54:15.090 [Thread-4] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: camel-1) is shutdown in 0.019 seconds
+18-02-2018 20:54:15.090 [Thread-4] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 0
+18-02-2018 20:54:15.091 [Thread-4] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+18-02-2018 20:54:15.092 [Thread-4] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.unregisterBeans - Unregistering JMX-exposed beans
+18-02-2018 20:54:15.092 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+18-02-2018 20:54:49.601 [main] INFO  c.l.CamelSpringBoilerPlateApplication.logStarting - Starting CamelSpringBoilerPlateApplication on 6c4008c0f7fa with PID 6285 (/Dilip/Study/ApacheCamel/TeachApacheCamel-Spring-Boot/codebase/camel-spring-boot-boiler-plate/target/classes started by z001qgd in /Dilip/Study/ApacheCamel/TeachApacheCamel-Spring-Boot/codebase/camel-spring-boot-boiler-plate)
+18-02-2018 20:54:49.605 [main] INFO  c.l.CamelSpringBoilerPlateApplication.logStartupProfileInfo - The following profiles are active: dev
+18-02-2018 20:54:49.665 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f45df59: startup date [Sun Feb 18 20:54:49 CST 2018]; root of context hierarchy
+18-02-2018 20:54:49.958 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.6.Final
+18-02-2018 20:54:50.930 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$ee71936d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-02-2018 20:54:50.938 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cc47cd4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-02-2018 20:54:51.264 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8080 (http)
+18-02-2018 20:54:51.273 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+18-02-2018 20:54:51.274 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.23
+18-02-2018 20:54:51.356 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+18-02-2018 20:54:51.356 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1691 ms
+18-02-2018 20:54:51.532 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+18-02-2018 20:54:51.535 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'metricsFilter' to: [/*]
+18-02-2018 20:54:51.535 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+18-02-2018 20:54:51.536 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18-02-2018 20:54:51.536 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18-02-2018 20:54:51.536 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+18-02-2018 20:54:51.536 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+18-02-2018 20:54:51.536 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'applicationContextIdFilter' to: [/*]
+18-02-2018 20:54:52.003 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f45df59: startup date [Sun Feb 18 20:54:49 CST 2018]; root of context hierarchy
+18-02-2018 20:54:52.055 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18-02-2018 20:54:52.056 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18-02-2018 20:54:52.083 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-02-2018 20:54:52.083 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-02-2018 20:54:52.111 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-02-2018 20:54:52.325 [main] WARN  o.a.c.i.DefaultCamelBeanPostProcessor.postProcessBeforeInitialization - No CamelContext defined yet so cannot inject into bean: routesHealthCheckRepository
+18-02-2018 20:54:52.447 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 192, classpath: 10)
+18-02-2018 20:54:53.029 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+18-02-2018 20:54:53.029 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:54:53.030 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/route-controller || /camel/route-controller.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:54:53.031 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+18-02-2018 20:54:53.031 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:54:53.031 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:54:53.032 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:54:53.032 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+18-02-2018 20:54:53.034 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:54:53.036 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+18-02-2018 20:54:53.036 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+18-02-2018 20:54:53.036 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:54:53.037 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:54:53.037 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+18-02-2018 20:54:53.038 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:54:53.041 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/health/check/{id}/invoke],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelHealthCheckMvcEndpoint.invoke(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+18-02-2018 20:54:53.041 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/health/check/{id}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelHealthCheckMvcEndpoint.query(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+18-02-2018 20:54:53.041 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/health/check || /camel/health/check.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:54:53.044 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/start],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.start(java.lang.String)
+18-02-2018 20:54:53.045 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/stop],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.stop(java.lang.String,java.lang.Long,java.lang.Boolean)
+18-02-2018 20:54:53.045 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/suspend],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.suspend(java.lang.String,java.lang.Long)
+18-02-2018 20:54:53.046 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/resume],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.resume(java.lang.String)
+18-02-2018 20:54:53.046 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/reset],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.reset(java.lang.String)
+18-02-2018 20:54:53.046 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/detail],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.detail(java.lang.String)
+18-02-2018 20:54:53.046 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.info(java.lang.String)
+18-02-2018 20:54:53.046 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes || /camel/routes.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:54:53.047 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+18-02-2018 20:54:53.047 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:54:53.048 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:54:53.207 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+18-02-2018 20:54:53.212 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+18-02-2018 20:54:53.215 [main] INFO  o.s.c.s.DefaultLifecycleProcessor.start - Starting beans in phase 0
+18-02-2018 20:54:53.217 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+18-02-2018 20:54:53.227 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'healthChecksEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthChecksEndpoint]
+18-02-2018 20:54:53.235 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'routeControllerEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=routeControllerEndpoint]
+18-02-2018 20:54:53.239 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'camelEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=camelEndpoint]
+18-02-2018 20:54:53.242 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+18-02-2018 20:54:53.244 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+18-02-2018 20:54:53.247 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+18-02-2018 20:54:53.249 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+18-02-2018 20:54:53.252 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+18-02-2018 20:54:53.256 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+18-02-2018 20:54:53.260 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+18-02-2018 20:54:53.262 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+18-02-2018 20:54:53.264 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+18-02-2018 20:54:53.265 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+18-02-2018 20:54:53.268 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+18-02-2018 20:54:53.312 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+18-02-2018 20:54:53.313 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+18-02-2018 20:54:53.329 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: camel-1) is starting
+18-02-2018 20:54:53.330 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+18-02-2018 20:54:53.481 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+18-02-2018 20:54:53.522 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: healthRoute started and consuming from: timer://health?period=10s
+18-02-2018 20:54:53.523 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route1 started and consuming from: timer://health?period=10s
+18-02-2018 20:54:53.524 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Total 2 routes, of which 2 are started
+18-02-2018 20:54:53.525 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: camel-1) started in 0.195 seconds
+18-02-2018 20:54:53.529 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+18-02-2018 20:54:53.537 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+18-02-2018 20:54:53.554 [main] INFO  o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+18-02-2018 20:54:53.567 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8080 (http)
+18-02-2018 20:54:53.572 [main] INFO  c.l.CamelSpringBoilerPlateApplication.logStarted - Started CamelSpringBoilerPlateApplication in 4.364 seconds (JVM running for 4.789)
+18-02-2018 20:54:54.648 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+18-02-2018 20:54:54.649 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+18-02-2018 20:54:54.665 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+18-02-2018 20:54:55.488 [http-nio-8080-exec-1] WARN  o.s.b.a.health.MailHealthIndicator.health - Health check failed
+javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials g127sm2084084iof.2 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:932)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:843)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:748)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.testConnection(JavaMailSenderImpl.java:382)
+	at org.springframework.boot.actuate.health.MailHealthIndicator.doHealthCheck(MailHealthIndicator.java:40)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:43)
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:68)
+	at org.springframework.boot.actuate.endpoint.HealthEndpoint.invoke(HealthEndpoint.java:85)
+	at org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.getCurrentHealth(HealthMvcEndpoint.java:177)
+	at org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.getHealth(HealthMvcEndpoint.java:166)
+	at org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(HealthMvcEndpoint.java:143)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+18-02-2018 20:54:55.668 [Camel (camel-1) thread #1 - timer://health] INFO  c.l.processor.HealthCheckProcessor.process - Health String of the APP is{"status":"DOWN","camel":{"status":"UP","name":"camel-1","version":"2.20.1","contextStatus":"Started"},"camel-health-checks":{"status":"UP","route:healthRoute":"UP","route:route1":"UP"},"mail":{"status":"DOWN","location":"smtp.gmail.com:587","error":"javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials g127sm2084084iof.2 - gsmtp\n"},"diskSpace":{"status":"UP","total":499071844352,"free":187199324160,"threshold":10485760},"db":{"status":"UP","database":"PostgreSQL","hello":1}}
+18-02-2018 20:54:55.685 [Camel (camel-1) thread #1 - timer://health] INFO  c.l.processor.HealthCheckProcessor.process - Exception Message isstatus component in the route is Down
+mail component in the route is Down
+
+18-02-2018 20:54:55.687 [Camel (camel-1) thread #1 - timer://health] INFO  com.learncamel.alert.MailProcessor.process - Error Message in MailProcessor : status component in the route is Down
+mail component in the route is Down
+
+18-02-2018 20:54:56.228 [Camel (camel-1) thread #1 - timer://health] ERROR o.a.c.processor.DefaultErrorHandler.log - Failed delivery for (MessageId: ID-6c4008c0f7fa-1519008892185-0-2 on ExchangeId: ID-6c4008c0f7fa-1519008892185-0-1). Exhausted after delivery attempt: 1 caught: org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials g127sm2084100iof.2 - gsmtp
+
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[healthRoute       ] [healthRoute       ] [timer://health?period=10s                                                     ] [      1696]
+[healthRoute       ] [choice1           ] [when[{header{header(env)} != mock}]choice[]                                   ] [      1136]
+[healthRoute       ] [pollEnrich1       ] [pollEnrich[constant{http://localhost:8080/health}]                            ] [      1127]
+[healthRoute       ] [process1          ] [Processor@0x2eadc9f6                                                          ] [        19]
+[healthRoute       ] [choice3           ] [when[{header{header(error)} == true}]choice[]                                 ] [         0]
+[healthRoute       ] [choice2           ] [when[{header{header(env)} != mock}]choice[]                                   ] [         0]
+[healthRoute       ] [process2          ] [Processor@0x5633dafd                                                          ] [       539]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials g127sm2084100iof.2 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:424)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.learncamel.alert.MailProcessor.process(MailProcessor.java:40)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.ChoiceProcessor.process(ChoiceProcessor.java:117)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.ChoiceProcessor.process(ChoiceProcessor.java:117)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:197)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:79)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+	Suppressed: java.lang.Throwable: status component in the route is Down
+mail component in the route is Down
+
+		at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		at org.springframework.core.convert.support.ObjectToObjectConverter.convert(ObjectToObjectConverter.java:106)
+		at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:37)
+		at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:203)
+		at org.apache.camel.spring.boot.SpringTypeConverter.convertTo(SpringTypeConverter.java:62)
+		at org.apache.camel.impl.converter.BaseTypeConverterRegistry.doConvertTo(BaseTypeConverterRegistry.java:326)
+		at org.apache.camel.impl.converter.BaseTypeConverterRegistry.convertTo(BaseTypeConverterRegistry.java:141)
+		at org.apache.camel.util.ExchangeHelper.convertToType(ExchangeHelper.java:240)
+		at org.apache.camel.impl.DefaultExchange.getProperty(DefaultExchange.java:200)
+		at org.apache.camel.processor.RedeliveryErrorHandler.handleException(RedeliveryErrorHandler.java:862)
+		at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:445)
+		... 14 common frames omitted
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials g127sm2084100iof.2 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:932)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:843)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:748)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 19 common frames omitted
+18-02-2018 20:54:56.229 [Camel (camel-1) thread #1 - timer://health] WARN  o.a.c.component.timer.TimerConsumer.log - Error processing exchange. Exchange[ID-6c4008c0f7fa-1519008892185-0-1]. Caused by: [org.springframework.mail.MailAuthenticationException - Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials g127sm2084100iof.2 - gsmtp
+]
+org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials g127sm2084100iof.2 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:424)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.learncamel.alert.MailProcessor.process(MailProcessor.java:40)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.ChoiceProcessor.process(ChoiceProcessor.java:117)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.ChoiceProcessor.process(ChoiceProcessor.java:117)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:197)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:79)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+	Suppressed: java.lang.Throwable: status component in the route is Down
+mail component in the route is Down
+
+		at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		at org.springframework.core.convert.support.ObjectToObjectConverter.convert(ObjectToObjectConverter.java:106)
+		at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:37)
+		at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:203)
+		at org.apache.camel.spring.boot.SpringTypeConverter.convertTo(SpringTypeConverter.java:62)
+		at org.apache.camel.impl.converter.BaseTypeConverterRegistry.doConvertTo(BaseTypeConverterRegistry.java:326)
+		at org.apache.camel.impl.converter.BaseTypeConverterRegistry.convertTo(BaseTypeConverterRegistry.java:141)
+		at org.apache.camel.util.ExchangeHelper.convertToType(ExchangeHelper.java:240)
+		at org.apache.camel.impl.DefaultExchange.getProperty(DefaultExchange.java:200)
+		at org.apache.camel.processor.RedeliveryErrorHandler.handleException(RedeliveryErrorHandler.java:862)
+		at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:445)
+		... 14 common frames omitted
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials g127sm2084100iof.2 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:932)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:843)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:748)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 19 common frames omitted
+18-02-2018 20:54:56.231 [Camel (camel-1) thread #1 - timer://health] INFO  .log - Exchange[ExchangePattern: InOnly, BodyType: null, Body: [Body is null]]
+18-02-2018 20:54:59.567 [Thread-4] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f45df59: startup date [Sun Feb 18 20:54:49 CST 2018]; root of context hierarchy
+18-02-2018 20:54:59.569 [Thread-4] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 2147483647
+18-02-2018 20:54:59.569 [Thread-4] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: camel-1) is shutting down
+18-02-2018 20:54:59.570 [Thread-4] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 2 routes (timeout 1 seconds)
+18-02-2018 20:54:59.573 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: timer://health?period=10s
+18-02-2018 20:54:59.574 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: healthRoute shutdown complete, was consuming from: timer://health?period=10s
+18-02-2018 20:54:59.574 [Thread-4] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 2 routes completed in 0 seconds
+18-02-2018 20:54:59.586 [Thread-4] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: camel-1) uptime 6.257 seconds
+18-02-2018 20:54:59.586 [Thread-4] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: camel-1) is shutdown in 0.017 seconds
+18-02-2018 20:54:59.586 [Thread-4] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 0
+18-02-2018 20:54:59.587 [Thread-4] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+18-02-2018 20:54:59.588 [Thread-4] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.unregisterBeans - Unregistering JMX-exposed beans
+18-02-2018 20:54:59.588 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+18-02-2018 20:55:47.006 [main] INFO  c.l.CamelSpringBoilerPlateApplication.logStarting - Starting CamelSpringBoilerPlateApplication on 6c4008c0f7fa with PID 6324 (/Dilip/Study/ApacheCamel/TeachApacheCamel-Spring-Boot/codebase/camel-spring-boot-boiler-plate/target/classes started by z001qgd in /Dilip/Study/ApacheCamel/TeachApacheCamel-Spring-Boot/codebase/camel-spring-boot-boiler-plate)
+18-02-2018 20:55:47.009 [main] INFO  c.l.CamelSpringBoilerPlateApplication.logStartupProfileInfo - The following profiles are active: dev
+18-02-2018 20:55:47.072 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f45df59: startup date [Sun Feb 18 20:55:47 CST 2018]; root of context hierarchy
+18-02-2018 20:55:47.348 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.6.Final
+18-02-2018 20:55:48.319 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$704365e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-02-2018 20:55:48.327 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4e199fc9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-02-2018 20:55:48.648 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8080 (http)
+18-02-2018 20:55:48.658 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+18-02-2018 20:55:48.658 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.23
+18-02-2018 20:55:48.736 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+18-02-2018 20:55:48.736 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1664 ms
+18-02-2018 20:55:48.911 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+18-02-2018 20:55:48.914 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'metricsFilter' to: [/*]
+18-02-2018 20:55:48.915 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+18-02-2018 20:55:48.915 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18-02-2018 20:55:48.915 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18-02-2018 20:55:48.915 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+18-02-2018 20:55:48.915 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+18-02-2018 20:55:48.915 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'applicationContextIdFilter' to: [/*]
+18-02-2018 20:55:49.444 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f45df59: startup date [Sun Feb 18 20:55:47 CST 2018]; root of context hierarchy
+18-02-2018 20:55:49.499 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18-02-2018 20:55:49.500 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18-02-2018 20:55:49.525 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-02-2018 20:55:49.525 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-02-2018 20:55:49.554 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-02-2018 20:55:49.765 [main] WARN  o.a.c.i.DefaultCamelBeanPostProcessor.postProcessBeforeInitialization - No CamelContext defined yet so cannot inject into bean: routesHealthCheckRepository
+18-02-2018 20:55:49.885 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 192, classpath: 10)
+18-02-2018 20:55:50.441 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+18-02-2018 20:55:50.442 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:55:50.442 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:55:50.447 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/start],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.start(java.lang.String)
+18-02-2018 20:55:50.448 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/stop],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.stop(java.lang.String,java.lang.Long,java.lang.Boolean)
+18-02-2018 20:55:50.448 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/suspend],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.suspend(java.lang.String,java.lang.Long)
+18-02-2018 20:55:50.448 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/resume],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.resume(java.lang.String)
+18-02-2018 20:55:50.448 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/reset],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.reset(java.lang.String)
+18-02-2018 20:55:50.448 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/detail],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.detail(java.lang.String)
+18-02-2018 20:55:50.449 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.info(java.lang.String)
+18-02-2018 20:55:50.449 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes || /camel/routes.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:55:50.449 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+18-02-2018 20:55:50.450 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:55:50.451 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+18-02-2018 20:55:50.451 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:55:50.452 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+18-02-2018 20:55:50.452 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+18-02-2018 20:55:50.453 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:55:50.453 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+18-02-2018 20:55:50.454 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:55:50.455 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/health/check/{id}/invoke],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelHealthCheckMvcEndpoint.invoke(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+18-02-2018 20:55:50.455 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/health/check/{id}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelHealthCheckMvcEndpoint.query(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+18-02-2018 20:55:50.455 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/health/check || /camel/health/check.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:55:50.455 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:55:50.456 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/route-controller || /camel/route-controller.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:55:50.456 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:55:50.457 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:55:50.457 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+18-02-2018 20:55:50.457 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:55:50.619 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+18-02-2018 20:55:50.624 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+18-02-2018 20:55:50.627 [main] INFO  o.s.c.s.DefaultLifecycleProcessor.start - Starting beans in phase 0
+18-02-2018 20:55:50.629 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+18-02-2018 20:55:50.639 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'healthChecksEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthChecksEndpoint]
+18-02-2018 20:55:50.647 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'routeControllerEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=routeControllerEndpoint]
+18-02-2018 20:55:50.652 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'camelEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=camelEndpoint]
+18-02-2018 20:55:50.654 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+18-02-2018 20:55:50.657 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+18-02-2018 20:55:50.659 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+18-02-2018 20:55:50.662 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+18-02-2018 20:55:50.664 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+18-02-2018 20:55:50.666 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+18-02-2018 20:55:50.669 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+18-02-2018 20:55:50.671 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+18-02-2018 20:55:50.673 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+18-02-2018 20:55:50.675 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+18-02-2018 20:55:50.677 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+18-02-2018 20:55:50.715 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+18-02-2018 20:55:50.715 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+18-02-2018 20:55:50.731 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: camel-1) is starting
+18-02-2018 20:55:50.732 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+18-02-2018 20:55:50.875 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+18-02-2018 20:55:50.919 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: healthRoute started and consuming from: timer://health?period=10s
+18-02-2018 20:55:50.920 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route1 started and consuming from: timer://health?period=10s
+18-02-2018 20:55:50.921 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Total 2 routes, of which 2 are started
+18-02-2018 20:55:50.922 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: camel-1) started in 0.191 seconds
+18-02-2018 20:55:50.926 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+18-02-2018 20:55:50.934 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+18-02-2018 20:55:50.952 [main] INFO  o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+18-02-2018 20:55:50.964 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8080 (http)
+18-02-2018 20:55:50.969 [main] INFO  c.l.CamelSpringBoilerPlateApplication.logStarted - Started CamelSpringBoilerPlateApplication in 4.332 seconds (JVM running for 4.747)
+18-02-2018 20:55:52.041 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+18-02-2018 20:55:52.041 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+18-02-2018 20:55:52.057 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+18-02-2018 20:55:53.346 [Camel (camel-1) thread #1 - timer://health] INFO  c.l.processor.HealthCheckProcessor.process - Health String of the APP is{"status":"UP","camel":{"status":"UP","name":"camel-1","version":"2.20.1","contextStatus":"Started"},"camel-health-checks":{"status":"UP","route:healthRoute":"UP","route:route1":"UP"},"mail":{"status":"UP","location":"smtp.gmail.com:587"},"diskSpace":{"status":"UP","total":499071844352,"free":187197087744,"threshold":10485760},"db":{"status":"UP","database":"PostgreSQL","hello":1}}
+18-02-2018 20:55:53.364 [Camel (camel-1) thread #1 - timer://health] INFO  .log - Exchange[ExchangePattern: InOnly, BodyType: null, Body: [Body is null]]
+18-02-2018 20:56:02.618 [Camel (camel-1) thread #1 - timer://health] INFO  c.l.processor.HealthCheckProcessor.process - Health String of the APP is{"status":"UP","camel":{"status":"UP","name":"camel-1","version":"2.20.1","contextStatus":"Started"},"camel-health-checks":{"status":"UP","route:healthRoute":"UP","route:route1":"UP"},"mail":{"status":"UP","location":"smtp.gmail.com:587"},"diskSpace":{"status":"UP","total":499071844352,"free":187197009920,"threshold":10485760},"db":{"status":"UP","database":"PostgreSQL","hello":1}}
+18-02-2018 20:56:03.366 [Camel (camel-1) thread #1 - timer://health] INFO  .log - Exchange[ExchangePattern: InOnly, BodyType: null, Body: [Body is null]]
+18-02-2018 20:56:11.629 [Thread-4] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f45df59: startup date [Sun Feb 18 20:55:47 CST 2018]; root of context hierarchy
+18-02-2018 20:56:11.631 [Thread-4] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 2147483647
+18-02-2018 20:56:11.631 [Thread-4] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: camel-1) is shutting down
+18-02-2018 20:56:11.632 [Thread-4] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 2 routes (timeout 1 seconds)
+18-02-2018 20:56:11.635 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: timer://health?period=10s
+18-02-2018 20:56:11.636 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: healthRoute shutdown complete, was consuming from: timer://health?period=10s
+18-02-2018 20:56:11.636 [Thread-4] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 2 routes completed in 0 seconds
+18-02-2018 20:56:11.648 [Thread-4] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: camel-1) uptime 20.918 seconds
+18-02-2018 20:56:11.649 [Thread-4] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: camel-1) is shutdown in 0.017 seconds
+18-02-2018 20:56:11.649 [Thread-4] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 0
+18-02-2018 20:56:11.650 [Thread-4] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+18-02-2018 20:56:11.650 [Thread-4] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.unregisterBeans - Unregistering JMX-exposed beans
+18-02-2018 20:56:11.650 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+18-02-2018 20:58:14.101 [main] INFO  c.l.CamelSpringBoilerPlateApplication.logStarting - Starting CamelSpringBoilerPlateApplication on 6c4008c0f7fa with PID 6350 (/Dilip/Study/ApacheCamel/TeachApacheCamel-Spring-Boot/codebase/camel-spring-boot-boiler-plate/target/classes started by z001qgd in /Dilip/Study/ApacheCamel/TeachApacheCamel-Spring-Boot/codebase/camel-spring-boot-boiler-plate)
+18-02-2018 20:58:14.103 [main] INFO  c.l.CamelSpringBoilerPlateApplication.logStartupProfileInfo - The following profiles are active: dev
+18-02-2018 20:58:14.165 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f45df59: startup date [Sun Feb 18 20:58:14 CST 2018]; root of context hierarchy
+18-02-2018 20:58:14.488 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.6.Final
+18-02-2018 20:58:15.411 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$e8dd44c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-02-2018 20:58:15.419 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c6b37ea2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-02-2018 20:58:15.726 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8080 (http)
+18-02-2018 20:58:15.735 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+18-02-2018 20:58:15.736 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.23
+18-02-2018 20:58:15.807 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+18-02-2018 20:58:15.808 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1643 ms
+18-02-2018 20:58:15.981 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+18-02-2018 20:58:15.984 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'metricsFilter' to: [/*]
+18-02-2018 20:58:15.985 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+18-02-2018 20:58:15.985 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18-02-2018 20:58:15.985 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18-02-2018 20:58:15.985 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+18-02-2018 20:58:15.986 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+18-02-2018 20:58:15.986 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'applicationContextIdFilter' to: [/*]
+18-02-2018 20:58:16.451 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f45df59: startup date [Sun Feb 18 20:58:14 CST 2018]; root of context hierarchy
+18-02-2018 20:58:16.504 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18-02-2018 20:58:16.505 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18-02-2018 20:58:16.531 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-02-2018 20:58:16.532 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-02-2018 20:58:16.560 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-02-2018 20:58:16.780 [main] WARN  o.a.c.i.DefaultCamelBeanPostProcessor.postProcessBeforeInitialization - No CamelContext defined yet so cannot inject into bean: routesHealthCheckRepository
+18-02-2018 20:58:16.886 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 192, classpath: 10)
+18-02-2018 20:58:17.425 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+18-02-2018 20:58:17.425 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:58:17.426 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:58:17.427 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+18-02-2018 20:58:17.427 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+18-02-2018 20:58:17.427 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:58:17.428 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+18-02-2018 20:58:17.428 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:58:17.429 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:58:17.431 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/route-controller || /camel/route-controller.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:58:17.431 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+18-02-2018 20:58:17.432 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:58:17.437 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/start],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.start(java.lang.String)
+18-02-2018 20:58:17.437 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/stop],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.stop(java.lang.String,java.lang.Long,java.lang.Boolean)
+18-02-2018 20:58:17.437 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/suspend],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.suspend(java.lang.String,java.lang.Long)
+18-02-2018 20:58:17.437 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/resume],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.resume(java.lang.String)
+18-02-2018 20:58:17.438 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/reset],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.reset(java.lang.String)
+18-02-2018 20:58:17.438 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/detail],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.detail(java.lang.String)
+18-02-2018 20:58:17.438 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes/{id}/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelRoutesMvcEndpoint.info(java.lang.String)
+18-02-2018 20:58:17.438 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/routes || /camel/routes.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:58:17.439 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:58:17.440 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/health/check/{id}/invoke],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelHealthCheckMvcEndpoint.invoke(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+18-02-2018 20:58:17.440 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/health/check/{id}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.apache.camel.spring.boot.actuate.endpoint.CamelHealthCheckMvcEndpoint.query(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+18-02-2018 20:58:17.441 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/camel/health/check || /camel/health/check.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:58:17.441 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:58:17.442 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+18-02-2018 20:58:17.442 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:58:17.443 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18-02-2018 20:58:17.444 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping.register - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+18-02-2018 20:58:17.607 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+18-02-2018 20:58:17.612 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+18-02-2018 20:58:17.615 [main] INFO  o.s.c.s.DefaultLifecycleProcessor.start - Starting beans in phase 0
+18-02-2018 20:58:17.617 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+18-02-2018 20:58:17.628 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'healthChecksEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthChecksEndpoint]
+18-02-2018 20:58:17.635 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'routeControllerEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=routeControllerEndpoint]
+18-02-2018 20:58:17.639 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'camelEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=camelEndpoint]
+18-02-2018 20:58:17.642 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+18-02-2018 20:58:17.645 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+18-02-2018 20:58:17.648 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+18-02-2018 20:58:17.650 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+18-02-2018 20:58:17.653 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+18-02-2018 20:58:17.655 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+18-02-2018 20:58:17.661 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+18-02-2018 20:58:17.662 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+18-02-2018 20:58:17.665 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+18-02-2018 20:58:17.666 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+18-02-2018 20:58:17.668 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.registerBeanInstance - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+18-02-2018 20:58:17.707 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+18-02-2018 20:58:17.707 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+18-02-2018 20:58:17.722 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: camel-1) is starting
+18-02-2018 20:58:17.723 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+18-02-2018 20:58:17.923 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+18-02-2018 20:58:17.976 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: healthRoute started and consuming from: timer://health?period=10s
+18-02-2018 20:58:17.977 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route1 started and consuming from: timer://health?period=10s
+18-02-2018 20:58:17.979 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Total 2 routes, of which 2 are started
+18-02-2018 20:58:17.980 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: camel-1) started in 0.257 seconds
+18-02-2018 20:58:17.984 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+18-02-2018 20:58:17.992 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+18-02-2018 20:58:18.015 [main] INFO  o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+18-02-2018 20:58:18.031 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8080 (http)
+18-02-2018 20:58:18.037 [main] INFO  c.l.CamelSpringBoilerPlateApplication.logStarted - Started CamelSpringBoilerPlateApplication in 4.296 seconds (JVM running for 4.717)
+18-02-2018 20:58:19.095 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+18-02-2018 20:58:19.095 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+18-02-2018 20:58:19.109 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+18-02-2018 20:58:20.210 [Camel (camel-1) thread #1 - timer://health] INFO  c.l.processor.HealthCheckProcessor.process - Health String of the APP is{"status":"UP","camel":{"status":"UP","name":"camel-1","version":"2.20.1","contextStatus":"Started"},"camel-health-checks":{"status":"UP","route:healthRoute":"UP","route:route1":"UP"},"mail":{"status":"UP","location":"smtp.gmail.com:587"},"diskSpace":{"status":"UP","total":499071844352,"free":187189866496,"threshold":10485760},"db":{"status":"UP","database":"PostgreSQL","hello":1}}
+18-02-2018 20:58:20.227 [Camel (camel-1) thread #1 - timer://health] INFO  route1.log - Current Environment is Hello from DEV Profile
+18-02-2018 20:58:20.229 [Camel (camel-1) thread #1 - timer://health] INFO  .log - Exchange[ExchangePattern: InOnly, BodyType: null, Body: [Body is null]]
+18-02-2018 20:58:27.320 [Thread-4] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f45df59: startup date [Sun Feb 18 20:58:14 CST 2018]; root of context hierarchy
+18-02-2018 20:58:27.322 [Thread-4] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 2147483647
+18-02-2018 20:58:27.323 [Thread-4] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: camel-1) is shutting down
+18-02-2018 20:58:27.324 [Thread-4] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 2 routes (timeout 1 seconds)
+18-02-2018 20:58:27.327 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: timer://health?period=10s
+18-02-2018 20:58:27.329 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: healthRoute shutdown complete, was consuming from: timer://health?period=10s
+18-02-2018 20:58:27.329 [Thread-4] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 2 routes completed in 0 seconds
+18-02-2018 20:58:27.343 [Thread-4] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: camel-1) uptime 9.621 seconds
+18-02-2018 20:58:27.344 [Thread-4] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.20.1 (CamelContext: camel-1) is shutdown in 0.021 seconds
+18-02-2018 20:58:27.344 [Thread-4] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 0
+18-02-2018 20:58:27.345 [Thread-4] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+18-02-2018 20:58:27.345 [Thread-4] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter.unregisterBeans - Unregistering JMX-exposed beans
+18-02-2018 20:58:27.345 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown

@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CamelSpringBoilerPlateApplication {
+public class SoapCamelApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CamelSpringBoilerPlateApplication.class, args);
+		SpringApplication.run(SoapCamelApplication.class, args);
 	}
 }

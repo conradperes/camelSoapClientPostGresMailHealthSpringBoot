@@ -1,3 +1,5 @@
+server:
+  port: 8081
 spring:
   profiles:
     active: dev
@@ -23,21 +25,20 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: xyz@gmail.com
+    username: integrationmachinelearning@gmail.com
     password:
     properties.mail.smtp.auth:  true
     properties.mail.smtp.starttls.enable: true
 
-mail.smtp.starttls.enable: true
-
-mailto: xyz@gmail.com
-mailFrom: xyz@gmail.com
+mailto: integrationmachinelearning@gmail.com
+mailFrom: integrationmachinelearning@gmail.com
 
 message:   Hello from MOCK Profile
 fromRoute: direct:input
-toRoute: mock:output
+toRoute: spring-ws:http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?webServiceTemplate=#webServiceTemplate&soapAction=http://www.oorsprong.org/websamples.countryinfo/FullCountryInfo
 healthRoute: direct:health
-
+dbNode: mock:output
+selectNode: mock:output
 ---
 
 spring:
@@ -50,18 +51,19 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: xyz@gmail.com
+    username: integrationmachinelearning@gmail.com
     password:
     properties.mail.smtp.auth:  true
     properties.mail.smtp.starttls.enable: true
 
-mailto: xyz@gmail.com
-mailFrom: xyz@gmail.com
+mailto: integrationmachinelearning@gmail.com
+mailFrom: integrationmachinelearning@gmail.com
 message:   Hello from DEV Profile
-fromRoute: timer:health?period=10s
-toRoute:  log:?level=INFO&showBody=true
+fromRoute: timer:application?period=10s
+toRoute: spring-ws:http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?webServiceTemplate=#webServiceTemplate&soapAction=http://www.oorsprong.org/websamples.countryinfo/FullCountryInfo
 healthRoute: timer:health?period=10s
-
+dbNode: jdbc:dataSource
+selectNode: sql:select * from countries where COUNTRY_CODE = :#countryCode?dataSource=#dataSource
 ---
 
 spring:
@@ -74,19 +76,24 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: xyz@gmail.com
+    username: integrationmachinelearning@gmail.com
     password:
     properties.mail.smtp.auth:  true
     properties.mail.smtp.starttls.enable: true
 
-mailto: xyz@gmail.com
-mailFrom: xyz@gmail.com
+mailto: integrationmachinelearning@gmail.com
+mailFrom: integrationmachinelearning@gmail.com
+
+
+
+
 message:    Hello from STAGE Profile
 
 fromRoute: timer:health?period=10s
 toRoute:  log:?level=INFO&showBody=true
 healthRoute: timer:health?period=10s
-
+dbNode: jdbc:dataSource
+selectNode: sql:select * from countries where COUNTRY_CODE = :#countryCode?dataSource=#dataSource
 
 ---
 
@@ -100,19 +107,20 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: xyz@gmail.com
+    username: integrationmachinelearning@gmail.com
     password:
     properties.mail.smtp.auth:  true
     properties.mail.smtp.starttls.enable: true
 
-mailto: xyz@gmail.com
-mailFrom: xyz@gmail.com
+mailto: integrationmachinelearning@gmail.com
+mailFrom: integrationmachinelearning@gmail.com
 
 message:    Hello from PROD Profile
 
 fromRoute: timer:health?period=10s
 toRoute:  log:?level=INFO&showBody=true
 healthRoute: timer:health?period=10s
-
+dbNode: jdbc:dataSource
+selectNode: sql:select * from countries where COUNTRY_CODE = :#countryCode?dataSource=#dataSource
 
 ---
